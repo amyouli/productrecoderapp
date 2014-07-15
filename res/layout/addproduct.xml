@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/product_add_page_bg_color"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@id/titletwobutton"
+        layout="@layout/title_two_button" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/titletwobutton"
+        android:descendantFocusability="blocksDescendants"
+        android:paddingBottom="48dip"
+        android:overScrollMode="always" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/addproducteditdetails"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dip"
+                android:layout_marginRight="5dip"
+                android:orientation="vertical"
+                android:paddingTop="10dip" >
+
+                <TextView
+                    android:id="@+id/productnametitle"
+                    style="@style/text_detail_demen"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3dip"
+                    android:text="@string/productname"
+                    android:textColor="@color/text_color" />
+
+                <EditText
+                    android:id="@id/productnameET"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dip"
+                    android:layout_below="@+id/productnametitle"
+                    android:background="@drawable/editbox_background_focus_yellow"
+                    android:imeOptions="actionNext"
+                    android:inputType="text" >
+                </EditText>
+
+                <TextView
+                    android:id="@+id/productpricetitle"
+                    style="@style/text_detail_demen"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/productnameET"
+                    android:layout_marginLeft="3dip"
+                    android:text="@string/productprice"
+                    android:textColor="@color/text_color" />
+
+                <EditText
+                    android:id="@id/productpriceET"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dip"
+                    android:layout_below="@+id/productpricetitle"
+                    android:background="@drawable/editbox_background_focus_yellow"
+                    android:imeOptions="actionNext"
+                    android:inputType="numberDecimal" />
+
+                <TextView
+                    android:id="@+id/productremarktitle"
+                    style="@style/text_detail_demen"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/productpriceET"
+                    android:layout_marginLeft="3dip"
+                    android:text="@string/productremark"
+                    android:textColor="@color/text_color" />
+
+                <EditText
+                    android:id="@id/productremakeET"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dip"
+                    android:layout_below="@+id/productremarktitle"
+                    android:background="@drawable/editbox_background_focus_yellow"
+                    android:imeOptions="actionNext"
+                    android:inputType="text" />
+
+                <TextView
+                    android:id="@+id/productsorttitle"
+                    style="@style/text_detail_demen"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/productremakeET"
+                    android:layout_marginLeft="3dip"
+                    android:text="@string/productsort"
+                    android:textColor="@color/text_color" />
+
+                <EditText
+                    android:id="@id/productsortET"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dip"
+                    android:layout_below="@+id/productsorttitle"
+                    android:background="@drawable/editbox_background_focus_yellow"
+                    android:imeOptions="actionSend"
+                    android:inputType="text"
+                    android:textColor="@color/text_color" >
+                </EditText>
+
+                <Spinner
+                    android:id="@id/productsortspinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/addproductbuttons"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/addproducteditdetails"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingTop="32dip" >
+
+                <Button
+                    android:id="@id/ok"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/button_bg_normal"
+                    android:text="@string/ok" />
+
+                <Button
+                    android:id="@id/reset"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50dip"
+                    android:background="@drawable/button_bg_normal"
+                    android:text="@string/reset" />
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+ <color name="transparent">#9000</color >
+ <color name="edit_text_bg_color">#9000</color >
+ <color name="black">#000000</color>
+ <color name="text_color">#000000</color>
+ <color name="listview_bg_color">#808080</color>
+ <color name="white">#ffffff</color>
+ <color name="product_img_bg">#0000cc</color>
+ <color name="product_add_page_bg_color">#c0c0c0</color>
+ <color name="detail_bg">#e6e6e6</color>
+ <color name="image_to_edge">#330000</color>
+ <color name="textcolor">#151515</color>
+
+</resources>

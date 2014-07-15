@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/listview_bg_color" >
+
+    <include
+        android:id="@id/detail_title_two_button"
+        android:layout_above="@id/detail_text_view"
+        layout="@layout/title_two_button" />
+
+    <RelativeLayout
+        android:id="@id/detail_all_view"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/detail_title_two_button"
+        android:layout_marginBottom="3dip"
+        android:layout_marginLeft="3dip"
+        android:layout_marginRight="3dip"
+        android:layout_marginTop="3dip"
+        android:background="@drawable/welcome_bg"
+        android:gravity="center" >
+
+        <include
+            android:id="@id/detailstextviewinc"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            layout="@layout/detailstextvie" />
+
+        <TextView
+            android:id="@id/showimagetextlable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/detailstextviewinc"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/text_color"
+            android:textSize="17dip"
+            android:text="@string/showimagetextlable" />
+
+        <FrameLayout
+            android:id="@id/detail_image_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@id/showimagetextlable"
+            android:measureAllChildren="false"
+            android:layout_marginTop="5dip" >
+
+            <ImageView
+                android:id="@id/detail_image"
+                android:contentDescription="@string/contentDescription"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center"
+                android:background="@drawable/detial_img_bg"
+                android:adjustViewBounds="true"
+                android:src="@drawable/defaultdetialimage" />
+        </FrameLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

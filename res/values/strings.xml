@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">ProductRecorder</string>
+    <string name="productname">Name:</string>
+    <string name="str_name">Name</string>
+    <string name="productprice">Price:</string>
+    <string name="strprice">Price</string>
+    <string name="productid">ID:</string>
+    <string name="ok">Submit</string>
+    <string name="empty">none</string>
+    <string name="cancel">Cancel</string>
+    <string name="productremark">Remark:</string>
+    <string name="loadinfo">Loading</string>
+    <string name="productlisttitle">Product List</string>
+    <string name="productsort">Sort:</string>
+    <string name="productlistback">List</string>
+    <string name="addback">Add</string>
+    <string name="plinput">Please input:\u0020</string>
+    <string name="plinputprice">Please input your product\'s price!</string>
+    <string name="date">Date:</string>
+    <string name="addproduct">Edit Product</string>
+    <string name="comma">\u0020,\u0020</string>
+    <string name="warn">WARN</string>
+    <string name="or">\u0020OR\u0020</string>
+    <string name="reset">Reset</string>
+    <string name="product_details">Product Details</string>
+    <string name="search_title">Search Product</string>
+    <string name="search">Search</string>
+    <string name="productall">ALL</string>
+    <string name="searchnoonematch">Product is not exit!</string>
+    <string name="dialogsearchtitle">Set Product Image</string>
+    <string name="dialogsearchtakepic">Take Picture</string>
+    <string name="dialogsearchfromgallery">Choose Form Ablum</string>
+    <string name="appnotfind">No App Match</string>
+    <string name="inserterror">Add Product Failure</string>
+    <string name="nownoproduct">Product Is Empty</string>
+    <string name="contextmenutitle">Select Function</string>
+    <string name="contextmenuproductdelete">Delete</string>
+    <string name="contextmenuproductdedit">Edit</string>
+    <string name="showimagetextlable">Hit blow to edit prouct picture</string>
+    <string name="configdeleteproduct">Are you sure delete this product?</string>
+    <string name="exit">Exit</string>
+    <string name="contentDescription">Product image</string>
+    <string name="productisexist">This product is exist! </string>
+    <string name="appinstallnotsucbynameunique">App update not success,please delete same name product</string>
+    <string name="alertexit">Exit</string>
+    <string name="confirmexit">Are you sure exit the application?</string>
+    <string name="moreproduct">More product</string>
+</resources>

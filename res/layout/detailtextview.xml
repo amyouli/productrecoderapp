@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@id/productitemtext"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_toRightOf="@id/productimglayout"
+    android:orientation="vertical"
+    android:paddingLeft="10dip" >
+
+    <RelativeLayout
+        android:id="@id/idlable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@id/productidlable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="@string/productid"
+            android:textColor="@color/text_color" />
+
+        <TextView
+            android:id="@id/listid"
+            style="@style/product_att_demen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:gravity="center_horizontal"
+            android:singleLine="true"
+            android:text="@string/empty"
+            android:textColor="@color/text_color" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@id/namelable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/idlable"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@id/productnamelable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="@string/productname"
+            android:textColor="@color/text_color" />
+
+        <TextView
+            android:id="@id/listname"
+            style="@style/product_att_demen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:gravity="center_horizontal"
+            android:maxEms="20"
+            android:singleLine="true"
+            android:text="@string/empty"
+            android:textColor="@color/text_color" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@id/pricelable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/namelable"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@id/productpricelable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="@string/productprice"
+            android:textColor="@color/text_color" />
+
+        <TextView
+            android:id="@id/listprice"
+            style="@style/product_att_demen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:gravity="center_horizontal"
+            android:singleLine="true"
+            android:text="@string/empty"
+            android:textColor="@color/text_color" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@id/remakerlable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/pricelable"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@id/productremakerlable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="@string/productremark"
+            android:textColor="@color/text_color" />
+
+        <TextView
+            android:id="@id/listremaker"
+            style="@style/product_att_demen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:gravity="center_horizontal"
+            android:singleLine="true"
+            android:text="@string/empty"
+            android:textColor="@color/text_color" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@id/productsortlayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/remakerlable"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@id/productsortlable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/productsort"
+            android:textColor="@color/text_color" >
+        </TextView>
+
+        <TextView
+            android:id="@id/productsort"
+            style="@style/product_att_demen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="@string/empty"
+            android:textColor="@color/text_color" >
+        </TextView>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@id/producttimelayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/productsortlayout"
+        android:orientation="horizontal"
+        android:textColor="@color/text_color" >
+
+        <TextView
+            android:id="@id/producttimelable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/date"
+            android:textColor="@color/text_color" >
+        </TextView>
+
+        <TextView
+            android:id="@id/productaddtime"
+            style="@style/product_att_demen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="@string/empty"
+            android:textColor="@color/text_color" />
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:background="@color/listview_bg_color"
+    android:saveEnabled="false"
+    android:orientation="vertical" 
+    android:descendantFocusability="blocksDescendants">
+
+    <include
+        android:id="@id/titletwobutton"
+        layout="@layout/title_two_button" />
+
+    <include
+        android:id="@id/progress"
+        layout="@layout/progress" />
+
+    <ListView
+        android:id="@id/listviewproduct"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="3dip"
+        android:layout_marginLeft="3dip"
+        android:layout_marginRight="3dip"
+        android:layout_marginTop="3dip"
+        android:background="@drawable/editbox_background_focus_yellow"
+        android:divider="@drawable/line1"
+        android:dividerHeight="1.0dip"
+        android:scrollbarStyle="outsideOverlay" />
+
+    <LinearLayout
+        android:id="@id/emptyproductlayout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center_vertical"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@id/emptyproducttext"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:text="@string/nownoproduct"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:textSize="25dp" />
+    </LinearLayout>
+
+</LinearLayout>
